@@ -1,3 +1,4 @@
+/* Reset and basic styling */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0 10px;
+  padding: 0 10px; /* Added padding for smaller screens */
 }
 
 /* Main container styling */
@@ -30,7 +31,7 @@ body {
 h1 {
   color: #3d9970;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2em; /* Responsive font size */
 }
 
 /* Button styling */
@@ -75,6 +76,7 @@ h1 {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1em; /* Ensure input text is large enough */
 }
 
 .opponent-input .button {
@@ -115,6 +117,7 @@ h1 {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1em; /* Ensure input text is large enough */
 }
 
 .submit-guess,
@@ -140,6 +143,7 @@ h1 {
 
   .user-guess {
     padding: 10px;
+    font-size: 1em; /* Ensures text in input fields is not too small */
   }
 
   .game-choice .button {
@@ -148,5 +152,12 @@ h1 {
 
   .opponent-input input {
     padding: 10px;
+    font-size: 1em; /* Ensures text in input fields is not too small */
   }
+}
+
+/* Viewport meta tag to prevent zooming on mobile devices */
+@viewport {
+  width: device-width;
+  initial-scale: 1;
 }
