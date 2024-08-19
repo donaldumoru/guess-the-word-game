@@ -1,11 +1,10 @@
-/* Reset default margins and paddings, and box-sizing for all elements */
+/* Reset and basic styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: Arial, sans-serif;
   background: #f0f4f8;
@@ -14,28 +13,25 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0 10px;
+  padding: 0 10px; 
 }
 
 /* Main container styling */
 .container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  width: 100%;
   max-width: 480px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  overflow: auto; /* Allow scrolling if needed */
 }
 
 /* Header styling */
 h1 {
   color: #3d9970;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2em; 
 }
 
 /* Button styling */
@@ -80,6 +76,7 @@ h1 {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1em; 
 }
 
 .opponent-input .button {
@@ -120,14 +117,13 @@ h1 {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 1em;
+  font-size: 1em; 
 }
 
 .submit-guess,
 .play-again {
   margin: 10px;
   width: 100%;
-  font-size: 1em;
 }
 
 /* Media Query */
@@ -136,9 +132,7 @@ h1 {
     font-size: 1.5em;
   }
 
-  .button,
-  .submit-guess,
-  .play-again {
+  .button {
     padding: 10px 20px;
     font-size: 0.9em;
   }
@@ -149,11 +143,21 @@ h1 {
 
   .user-guess {
     padding: 10px;
-    font-size: 1em;
+    font-size: 1em; 
+  }
+
+  .game-choice .button {
+    font-size: 0.9em;
   }
 
   .opponent-input input {
     padding: 10px;
-    font-size: 1em;
+    font-size: 1em; /
   }
+}
+
+/* Viewport meta tag to prevent zooming on mobile devices */
+@viewport {
+  width: device-width;
+  initial-scale: 1;
 }
