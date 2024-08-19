@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Word Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Guess The Word Game</h1>
+      </header>
+
+      <div class="game-choice">
+        <button class="button single-player">Play vs Computer</button>
+        <button class="button two-players">Play vs Opponent</button>
+      </div>
+
+      <div class="opponent-input">
+        <h2>Input a word & hint</h2>
+        <input class="opponent-word" type="text" placeholder="Enter Word" />
+        <input class="opponent-hint" type="text" placeholder="Enter Hint" />
+        <button class="button save-word">Save</button>
+      </div>
+
+      <div class="game-container">
+        <p class="word-display"></p>
+        <p class="word-length"></p>
+        <p class="chances"></p>
+        <p class="hint"></p>
+        <p class="alert"></p>
+        <input class="user-guess" type="text" placeholder="Your Guess?" />
+        <button class="button submit-guess">Submit Guess</button>
+        <button class="button play-again">Play Again</button>
+      </div>
+    </div>
+  </body>
+</html>
