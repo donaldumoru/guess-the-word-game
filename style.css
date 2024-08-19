@@ -132,6 +132,15 @@ h1 {
     font-size: 1.5em;
   }
 
+  .word-display,
+.word-length,
+.chances,
+.hint,
+.alert {
+  margin: 5px 0;
+  font-size: 0.8em;
+}
+
   .button {
     padding: 10px 20px;
     font-size: 0.9em;
